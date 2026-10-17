@@ -6,6 +6,10 @@ reddit.com##xpromo-app-selector
 reddit.com##xpromo-new-app-selector
 reddit.com##.XPromoPopup
 
+
+! Unblock scrolling disabled by the overlaywww.reddit.com##body, html:style(overflow: auto !important; position: static !important;)
+0 commit commentsComments0 (0)Lock conversation
+
 ! Restore scrolling and allow clicks when the popup triggers
 reddit.com##+js(rc, rpl-scroll-lock|scroll-is-blocked|scroll-disabled, html, stay)
 reddit.com##+js(rc, rpl-scroll-lock|scroll-is-blocked|scroll-disabled, body, stay)

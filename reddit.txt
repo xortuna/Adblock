@@ -1,12 +1,13 @@
-! Block Reddit "Get the App" popups and banners
-www.reddit.com###app-upsell-blocking-bottom-sheet-seo
-www.reddit.com###app-upsell-blocking-bottom-sheet-direct
-www.reddit.com##.XPromoPopupRpl
-www.reddit.com##.rpl-bottom-sheet
-www.reddit.com##xpromo-new-app-selector
-www.reddit.com##xpromo-app-selector
-www.reddit.com##.XPromoBottomBar
-www.reddit.com##.XPromoInFeed
+! Block the Reddit mobile app promo bottom sheet / popups
+reddit.com##.rpl-bottom-sheet
+reddit.com##.configured-xpromo-bottom-sheet
+reddit.com###app-upsell-blocking-bottom-sheet-direct
+reddit.com##xpromo-app-selector
+reddit.com##xpromo-new-app-selector
+reddit.com##.XPromoPopup
 
-! Unblock scrolling disabled by the overlay
-www.reddit.com##body, html:style(overflow: auto !important; position: static !important;)
+! Restore scrolling and allow clicks when the popup triggers
+reddit.com##+js(rc, rpl-scroll-lock|scroll-is-blocked|scroll-disabled, html, stay)
+reddit.com##+js(rc, rpl-scroll-lock|scroll-is-blocked|scroll-disabled, body, stay)
+reddit.com##body.scroll-is-blocked:style(overflow: visible !important; position: static !important;)
+reddit.com##body.scroll-disabled:style(overflow: visible !important; position: static !important;)

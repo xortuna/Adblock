@@ -1,0 +1,12 @@
+! Block Reddit "Get the App" popups and banners
+www.reddit.com###app-upsell-blocking-bottom-sheet-seo
+www.reddit.com###app-upsell-blocking-bottom-sheet-direct
+www.reddit.com##.XPromoPopupRpl
+www.reddit.com##.rpl-bottom-sheet
+www.reddit.com##xpromo-new-app-selector
+www.reddit.com##xpromo-app-selector
+www.reddit.com##.XPromoBottomBar
+www.reddit.com##.XPromoInFeed
+
+! Unblock scrolling disabled by the overlay
+www.reddit.com##body, html:style(overflow: auto !important; position: static !important;)
